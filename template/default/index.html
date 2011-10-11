@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Paste It</title>
+<link rel="stylesheet" type="text/css" href="template/default/reset.css" />
+<link rel="stylesheet" type="text/css" href="template/default/style.css" />
+</script>
+</head>
+<body>
+<div id="wrap">
+	<h2>Paste It</h2>
+	<br />
+	<form action="{$_SERVER['PHP_SELF']}" method="post">
+	<input type="hidden" name="sk" value="save" />
+	<textarea name="content" rows="30" style="width: 100%"></textarea>
+	<br />
+	<select name="language">
+	<!--{foreach:$language_list $llk $llv}-->
+	<option value="{$llv}">{$llv}</option>
+	<!--{/foreach}-->
+	</select>
+	<input type="submit" value="Submit It" />
+	</form>
+	<br />
+	<div id="copyright">Powered By <a href="http://zeuik.com/studio">SeekStudio</a></div>
+</div>
+</body>
+</html>
